@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+    color: var(--font-color);
+}
+
+:root {
+    --background-color: #6ee7b7;
+    --content-color: #065f46;
+    --font-color: #fafafa;
+    --side-bar-color: #facc15;
+}
+
+svg {
+    height: 20px;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--background-color);
+}
+
+.header {
+    border: 1px solid black;
+    grid-column: 2 / 3;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    border: 1px solid black;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    border: 1px solid black;
+}
+
+.lower-header div {
+    display: flex;
+    height: 50%;
+}
+
+.side-bar {
+    border: 1px solid black;
+}
+
+.projects {
+    border: 1px solid black;
+}
+
+.announcements {
+    border: 1px solid black;
+}
