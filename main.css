@@ -15,6 +15,16 @@ body {
 
 svg {
     height: 20px;
+    cursor: pointer;
+}
+
+.header path,
+.project-card path {
+    fill: var(--side-bar-color) /* for styling svg icons */
+}
+
+.project-card .like-btn-clicked {
+    fill: red;
 }
 
 img {
@@ -99,6 +109,10 @@ img {
     cursor: pointer;
 }
 
+.lower-header .header-btn button:hover {
+    background-color: #27e79a;
+}
+
 .side-bar {
     grid-row: 1 / 3;
     display: grid;
@@ -138,6 +152,10 @@ img {
     font-weight: bold;
     cursor: pointer;
     color: rgb(39, 34, 34);
+}
+
+.side-bar-item:hover {
+    background-color: #ddb204;
 }
 
 .content {
